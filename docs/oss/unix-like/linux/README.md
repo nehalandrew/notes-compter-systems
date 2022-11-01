@@ -1,59 +1,28 @@
-# How linux startups
-```
-->	EFI			BIOS
-->	grub2(500)		GRUB(in 500MB)
-->	/boot/grub2		GRUB2
-```
-```
-->	/boot/*.dtb		device-tree-blob for embedded
-+	/boot/vmlinuz		zipped kernel
-+	/boot/initrd.img	initial ramdisk
-->	kthreadd		kernel thread daemon
-```
-```
-+	/usr/sbin/init		systemd (ln /usr/lib/systemd/systemd)
-->	/
-->	Network
-->	pstree			daemons
-```
-![picture](./linux_boot.dio.svg)
+# Linux
 
-## GRUB2 cli
-```
-linux /vmlinuz root=UUID=... # (='h0,_') (=/dev/sda)
-initrd /initrd.img
-boot
-```
+Linux is not os it's just kernel for every one in free access.
 
-## The systemd startup map: 
-``` bash
-pstree
-```
+Ready OS's  with Linux kernel, [desktop environment](https://en.wikipedia.org/wiki/Desktop_environment) and [package manager](https://en.wikipedia.org/wiki/Package_manager) is named [distros](https://en.wikipedia.org/wiki/Linux_distribution).
+
+Official kernel [site](https://www.kernel.org/).
+
+Debian distro official [site](https://www.debian.org/).
 
 
-## rootfs + boot:
-### Kernel space (DTB + kernel + rootfs)
-```
-/boot	- BOOT, *.dtb, vmlinuz, initd.img
-/dev	- devices
-/sys	- devices drivers kernel...
-/proc	- proces like files
-```
-### User space (daemon + bins + libs)
-```
-/usr	- unix system resource bins libs
-/etc	- configs for bins
-/srv	- rules for sites
-```
-#### Daemons and programs files
-```
-/run	- runtime var dir for daemons
-/tmp	- short time var file
-/var	- long time var files like run tmp..
-```
+Read about Linux on [wiki](https://en.wikipedia.org/wiki/Linux).
 
-#### Users files
-```
-/root 	- root home
-/home 	- users home
-```
+Read about Linux distribution on [wiki](https://en.wikipedia.org/wiki/Linux_distribution).
+
+Here is [list of books](books.md) about linux.
+
+## Arch
+
+![arch](./pics/linux_arch.jpg)
+
+## Boot
+
+[Read note.](./boot.md)
+
+## Folders logic
+
+![](./pics/folders_logik.jpg)

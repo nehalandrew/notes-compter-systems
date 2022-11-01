@@ -41,7 +41,7 @@ A real-time operating system is an operating system for real-time applications t
 
 
 Also notes:
- - [UNIX-LIKE](./docs/oss/unix-like/README.md)
+ - [UNIX-LIKE](https://en.wikipedia.org/wiki/Unix-like)
    - [FreeBSD](./docs/oss/unix-like/bsd/README.md)
    - [Linux](./docs/oss/unix-like/linux/README.md)
    - [MacOS](./docs/oss/unix-like/mac/README.md)
